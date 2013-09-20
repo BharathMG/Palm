@@ -28,6 +28,14 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Left" Margin="39,39,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="40" Width="140" FontSize="30"/>
+            <TextBlock HorizontalAlignment="Left" Margin="39,97,0,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Height="40" Width="140" FontSize="30"/>
+            <TextBlock x:Name="gender_block" HorizontalAlignment="Left" Margin="238,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="140" FontSize="30"/>
+            <TextBlock x:Name="age_block" HorizontalAlignment="Left" Margin="238,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="140" FontSize="30"/>
+            <TextBlock x:Name="name_block" HorizontalAlignment="Left" Margin="238,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="140" FontSize="30"/>
+            <TextBlock HorizontalAlignment="Left" Margin="39,161,0,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Height="40" Width="140" FontSize="30"/>
+            <TextBlock HorizontalAlignment="Left" Margin="39,219,0,0" TextWrapping="Wrap" Text="Personality" VerticalAlignment="Top" Height="40" Width="167" FontSize="30"/>
+            <TextBlock x:Name="personality_block" HorizontalAlignment="Left" Margin="238,219,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="40" Width="140" FontSize="30"/>
 
         </Grid>
     </Grid>

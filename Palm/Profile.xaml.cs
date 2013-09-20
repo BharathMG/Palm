@@ -89,7 +89,7 @@ namespace Palm
 
             //Stores profile if everything is in place.
             storeProfile(profile);
-
+            NavigationService.Navigate(new Uri("/Gifts.xaml", UriKind.Relative));
 
 
 
