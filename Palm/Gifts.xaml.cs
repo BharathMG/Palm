@@ -10,21 +10,11 @@ using Microsoft.Phone.Shell;
 
 namespace Palm
 {
-    public partial class Store : PhoneApplicationPage
+    public partial class Gifts : PhoneApplicationPage
     {
-        Palm.Profile.Details details;
-        public Store()
+        public Gifts()
         {
             InitializeComponent();
-        }
-
-        private void loadUI()
-        {
-            details = Profile.loadProfile();
-            if (details != null)
-            {
-                
-            }
         }
     }
 }

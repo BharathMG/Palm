@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.IO.IsolatedStorage;
+using System.Diagnostics;
 
 namespace Palm
 {
@@ -25,7 +26,7 @@ namespace Palm
             }
         } 
 
-        public class Profile
+        public class Details
         {
             public string Name
             {
@@ -74,7 +75,7 @@ namespace Palm
             String gender_text = (bool)male_button.IsChecked ? "Male" : "Female";
             String personality_text = (personality_list.SelectedItem as Personality).Name;
             Personality personality = new Personality() { Name = personality_text };
-            Profile profile = new Profile() { Age = age_text, Name = name_text, Gender = gender_text, personality = personality };
+            Details profile = new Details() { Age = age_text, Name = name_text, Gender = gender_text, personality = personality };
             
             //System.Diagnostics.Debug.WriteLine(age_text + " , " + name_text + " , " + gender_text + " , " + personality_text);
             if (age_text.Length < 1 || name_text.Length < 1)
@@ -94,23 +95,25 @@ namespace Palm
 
         }
 
-        private static void storeProfile(Profile profile)
+        private static void storeProfile(Details profile)
         {
             if (IsolatedStorageSettings.ApplicationSettings.Contains("profile"))
             {
                 IsolatedStorageSettings.ApplicationSettings["profile"] = profile;
+                Debug.WriteLine("Updated");
             }
             else
             {
                 IsolatedStorageSettings.ApplicationSettings.Add("profile", profile);
+                Debug.WriteLine("Created");
             }
             IsolatedStorageSettings.ApplicationSettings.Save();
         }
 
-        private static Profile loadProfile()
+        public static Details loadProfile()
         {
-            Profile profile;
-            if (IsolatedStorageSettings.ApplicationSettings.TryGetValue<Profile>("profile",out profile))
+            Details profile;
+            if (IsolatedStorageSettings.ApplicationSettings.TryGetValue<Details>("profile",out profile))
             {
                 return profile;
             }
