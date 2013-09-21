@@ -72,3 +72,4 @@ C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Bin\Debug\zh-Ha
 C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
 C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\obj\Debug\Gifts.g.cs
 C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Bin\Debug\Newtonsoft.Json.dll
+C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\obj\Debug\Browse.g.cs

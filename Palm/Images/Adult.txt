@@ -1,0 +1,4 @@
+adult-0.jpg;Love you, guys!;August 10, 2011;4
+adult-1.jpg;Marnie is having so much fun here!;September 15, 2011;5
+adult-2.jpg;Saying: Hi!;September 15, 2011;3
+adult-3.jpg;Happy birthday to me!;October 1, 2011;11

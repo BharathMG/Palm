@@ -21,6 +21,7 @@ namespace Palm
     {
         private List<ViewModel> itemsSource = new List<ViewModel>(7);
         private DispatcherTimer playTimer;
+        string name = "";
         public Gifts()
         {
             InitializeComponent();
@@ -28,9 +29,7 @@ namespace Palm
             this.playTimer.Interval = TimeSpan.FromSeconds(2);
             this.playTimer.Tick += this.OnPlayTimerTick;
            
-            this.LoadData();
-            speakText();
-            this.slideView.DataContext = this.itemsSource;
+           
            
 
             this.Unloaded += this.OnUnloaded;
@@ -46,10 +45,22 @@ namespace Palm
 
             await synth.SpeakTextAsync("These gifts are recommended for your loved ones");
         }
+
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            
+
+            NavigationContext.QueryString.TryGetValue("personality", out name);
+            this.LoadData();
+            speakText();
+            this.slideView.DataContext = this.itemsSource;
+            Debug.WriteLine(name);
+        } 
         private void LoadData()
         {
-            
-            StreamResourceInfo resource = Application.GetResourceStream(new Uri("Images/FirstLookData.txt", UriKind.RelativeOrAbsolute));
+            StreamResourceInfo resource = Application.GetResourceStream(new Uri("Images/" + name + ".txt", UriKind.RelativeOrAbsolute));
             using (StreamReader reader = new StreamReader(resource.Stream))
             {
                 string line = string.Empty;

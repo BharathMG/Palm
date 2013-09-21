@@ -1,0 +1,4 @@
+﻿kid-0.jpg;Love you, guys!;August 10, 2011;4
+kid-1.jpg;Marnie is having so much fun here!;September 15, 2011;5
+kid-2.jpg;Saying: Hi!;September 15, 2011;3
+kid-3.jpg;Happy birthday to me!;October 1, 2011;11

@@ -93,6 +93,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Browse.xaml.cs">
+      <DependentUpon>Browse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gifts.xaml.cs">
       <DependentUpon>Gifts.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Browse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Gifts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -143,6 +150,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\all.txt" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -162,7 +170,12 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Children.txt" />
+    <Content Include="Images\Geek.txt" />
     <Content Include="Images\adult-0.jpg" />
+    <Content Include="Images\adult-1.jpg" />
+    <Content Include="Images\adult-2.jpg" />
+    <Content Include="Images\adult-3.jpg" />
     <Content Include="Images\family-0.jpg" />
     <Content Include="Images\family-1.jpg" />
     <Content Include="Images\family-2.jpg" />
@@ -170,12 +183,26 @@
     <Content Include="Images\family-4.jpg" />
     <Content Include="Images\family-5.jpg" />
     <Content Include="Images\family-6.jpg" />
-    <Content Include="Images\FirstLookData.txt" />
+    <Content Include="Images\Adult.txt" />
+    <Content Include="Images\geek-0.jpg" />
+    <Content Include="Images\geek-1.jpg" />
+    <Content Include="Images\geek-2.jpg" />
+    <Content Include="Images\geek-3.jpg" />
+    <Content Include="Images\kid-3.jpg" />
     <Content Include="Images\pause.png" />
     <Content Include="Images\play.png" />
     <Content Include="Images\kid-0.jpg" />
     <Content Include="Images\kid-1.jpg" />
     <Content Include="Images\kid-2.jpg" />
+    <Content Include="Images\teen-0.jpg" />
+    <Content Include="Images\teen-1.jpg" />
+    <Content Include="Images\teen-2.jpg" />
+    <Content Include="Images\teen-3.jpg" />
+    <Content Include="Images\Teen.txt" />
+    <Content Include="palm.png" />
+    <Content Include="palm159.png" />
+    <Content Include="palm336.png" />
+    <Content Include="palm691.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />

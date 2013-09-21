@@ -1,11 +1,17 @@
-﻿<xapCache source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Bin\Debug\Palm_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/21/2013 6:05:57 PM">
-  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\obj\Debug\Palm.dll" archivePath="Palm.dll" lastWriteTime="9/21/2013 6:05:54 PM" />
+﻿<xapCache source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Bin\Debug\Palm_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="9/21/2013 8:03:15 PM">
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\obj\Debug\Palm.dll" archivePath="Palm.dll" lastWriteTime="9/21/2013 8:03:12 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\all.txt" archivePath="Images\all.txt" lastWriteTime="9/21/2013 7:36:33 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="9/20/2013 8:52:23 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="9/20/2013 8:52:23 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="9/20/2013 8:52:23 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="9/20/2013 8:52:23 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="9/20/2013 8:52:23 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\Children.txt" archivePath="Images\Children.txt" lastWriteTime="9/21/2013 7:11:03 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\Geek.txt" archivePath="Images\Geek.txt" lastWriteTime="9/21/2013 6:40:58 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\adult-0.jpg" archivePath="Images\adult-0.jpg" lastWriteTime="9/21/2013 5:10:27 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\adult-1.jpg" archivePath="Images\adult-1.jpg" lastWriteTime="9/21/2013 6:17:13 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\adult-2.jpg" archivePath="Images\adult-2.jpg" lastWriteTime="9/21/2013 6:17:42 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\adult-3.jpg" archivePath="Images\adult-3.jpg" lastWriteTime="9/21/2013 6:17:48 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\family-0.jpg" archivePath="Images\family-0.jpg" lastWriteTime="9/21/2013 2:33:20 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\family-1.jpg" archivePath="Images\family-1.jpg" lastWriteTime="9/21/2013 2:32:44 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\family-2.jpg" archivePath="Images\family-2.jpg" lastWriteTime="9/21/2013 2:32:44 AM" />
@@ -13,12 +19,22 @@
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\family-4.jpg" archivePath="Images\family-4.jpg" lastWriteTime="9/21/2013 2:32:44 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\family-5.jpg" archivePath="Images\family-5.jpg" lastWriteTime="9/21/2013 2:32:44 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\family-6.jpg" archivePath="Images\family-6.jpg" lastWriteTime="9/21/2013 2:32:44 AM" />
-  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\FirstLookData.txt" archivePath="Images\FirstLookData.txt" lastWriteTime="9/21/2013 2:32:24 AM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\Adult.txt" archivePath="Images\Adult.txt" lastWriteTime="9/21/2013 6:36:15 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\geek-0.jpg" archivePath="Images\geek-0.jpg" lastWriteTime="9/21/2013 6:27:54 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\geek-1.jpg" archivePath="Images\geek-1.jpg" lastWriteTime="9/21/2013 6:27:54 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\geek-2.jpg" archivePath="Images\geek-2.jpg" lastWriteTime="9/21/2013 6:27:54 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\geek-3.jpg" archivePath="Images\geek-3.jpg" lastWriteTime="9/21/2013 6:27:54 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\kid-3.jpg" archivePath="Images\kid-3.jpg" lastWriteTime="9/21/2013 6:32:56 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\pause.png" archivePath="Images\pause.png" lastWriteTime="9/21/2013 2:31:31 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\play.png" archivePath="Images\play.png" lastWriteTime="9/21/2013 2:31:31 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\kid-0.jpg" archivePath="Images\kid-0.jpg" lastWriteTime="9/21/2013 3:20:31 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\kid-1.jpg" archivePath="Images\kid-1.jpg" lastWriteTime="9/21/2013 3:20:40 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\kid-2.jpg" archivePath="Images\kid-2.jpg" lastWriteTime="9/21/2013 3:20:48 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\teen-0.jpg" archivePath="Images\teen-0.jpg" lastWriteTime="9/21/2013 6:27:54 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\teen-1.jpg" archivePath="Images\teen-1.jpg" lastWriteTime="9/21/2013 6:31:10 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\teen-2.jpg" archivePath="Images\teen-2.jpg" lastWriteTime="9/21/2013 6:31:10 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\teen-3.jpg" archivePath="Images\teen-3.jpg" lastWriteTime="9/21/2013 6:31:10 PM" />
+  <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Images\Teen.txt" archivePath="Images\Teen.txt" lastWriteTime="9/21/2013 6:41:28 PM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="9/21/2013 12:35:57 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="9/21/2013 12:35:57 AM" />
   <file source="C:\Users\Bharath\Documents\Visual Studio 2012\Projects\Palm\Palm\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="9/21/2013 12:35:57 AM" />

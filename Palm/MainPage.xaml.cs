@@ -33,6 +33,11 @@ namespace Palm
             NavigationService.Navigate(new Uri("/Store.xaml", UriKind.Relative));
         }
 
+        private void browse_all(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Browse.xaml", UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
