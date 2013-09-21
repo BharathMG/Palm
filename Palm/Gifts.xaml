@@ -29,14 +29,16 @@
 
         <!--ContentPanel - place additional content here-->
 
-        <telerikPrimitives:RadSlideView x:Name="slideView" Margin="12,138,-6,141" ItemsSource="{Binding}" Grid.RowSpan="2">
+        <telerikPrimitives:RadSlideView x:Name="slideView" Margin="12,138,10,141" ItemsSource="{Binding}" Grid.RowSpan="2">
             <telerikPrimitives:RadSlideView.ItemTemplate>
                 <DataTemplate>
-                    <Image Source="{Binding Image}" Stretch="UniformToFill"/>
+                    <Image x:Name="wallpaper" Source="{Binding Image}" Stretch="UniformToFill" Hold="Change_Wallpaper"/>
                 </DataTemplate>
             </telerikPrimitives:RadSlideView.ItemTemplate>
         </telerikPrimitives:RadSlideView>
-        
+        <Button x:Name="slide_button" Content="Slideshow" HorizontalAlignment="Left" Margin="120,170,0,0" Grid.Row="1" VerticalAlignment="Top" Width="232" Click="playSlideShow"/>
+
+
 
     </Grid>
 </phone:PhoneApplicationPage>

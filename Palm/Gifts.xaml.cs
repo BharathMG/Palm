@@ -12,6 +12,8 @@ using System.IO;
 using System.Globalization;
 using System.Windows.Threading;
 using System.Windows.Media.Imaging;
+using Windows.Phone.Speech.Synthesis;
+using System.Diagnostics;
 
 namespace Palm
 {
@@ -25,9 +27,11 @@ namespace Palm
             this.playTimer = new DispatcherTimer();
             this.playTimer.Interval = TimeSpan.FromSeconds(2);
             this.playTimer.Tick += this.OnPlayTimerTick;
-
+           
             this.LoadData();
+            speakText();
             this.slideView.DataContext = this.itemsSource;
+           
 
             this.Unloaded += this.OnUnloaded;
         }
@@ -36,8 +40,15 @@ namespace Palm
             this.slideView.MoveToNextItem();
         }
 
+        private async void speakText()
+        {
+            SpeechSynthesizer synth = new SpeechSynthesizer();
+
+            await synth.SpeakTextAsync("These gifts are recommended for your loved ones");
+        }
         private void LoadData()
         {
+            
             StreamResourceInfo resource = Application.GetResourceStream(new Uri("Images/FirstLookData.txt", UriKind.RelativeOrAbsolute));
             using (StreamReader reader = new StreamReader(resource.Stream))
             {
@@ -100,18 +111,7 @@ namespace Palm
             }
         }
 
-        private void OnPlayTap(object sender, GestureEventArgs e)
-        {
-            if (this.playTimer.IsEnabled)
-            {
-                this.StopSlideShow();
-            }
-            else
-            {
-                this.playTimer.Start();
-                //this.buttonImage.Source = new BitmapImage(new Uri("Images/pause.png", UriKind.RelativeOrAbsolute));
-            }
-        }
+ 
 
         private void OnUnloaded(object sender, RoutedEventArgs e)
         {
@@ -124,7 +124,74 @@ namespace Palm
         private void StopSlideShow()
         {
             this.playTimer.Stop();
-           // this.buttonImage.Source = new BitmapImage(new Uri("Images/play.png", UriKind.RelativeOrAbsolute));
+            this.slide_button.Content = "Play";
+        }
+
+        private void OnPlayTap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+           
+        }
+
+        private void playSlideShow(object sender, RoutedEventArgs e)
+        {
+            if (this.playTimer.IsEnabled)
+            {
+                this.StopSlideShow();
+            }
+            else
+            {
+                this.playTimer.Start();
+                this.slide_button.Content = "Pause";
+            }
+        }
+        private async void LockHelper(string filePathOfTheImage, bool isAppResource)
+        {
+            try
+            {
+                var isProvider = Windows.Phone.System.UserProfile.LockScreenManager.IsProvidedByCurrentApplication;
+                if (!isProvider)
+                {
+                    // If you're not the provider, this call will prompt the user for permission.
+                    // Calling RequestAccessAsync from a background agent is not allowed.
+                    var op = await Windows.Phone.System.UserProfile.LockScreenManager.RequestAccessAsync();
+
+                    // Only do further work if the access was granted.
+                    isProvider = op == Windows.Phone.System.UserProfile.LockScreenRequestResult.Granted;
+                }
+
+                if (isProvider)
+                {
+                    // At this stage, the app is the active lock screen background provider.
+
+                    // The following code example shows the new URI schema.
+                    // ms-appdata points to the root of the local app data folder.
+                    // ms-appx points to the Local app install folder, to reference resources bundled in the XAP package.
+                    var schema = isAppResource ? "ms-appx:///" : "ms-appdata:///Local/";
+                    var uri = new Uri(schema + filePathOfTheImage, UriKind.Absolute);
+
+                    // Set the lock screen background image.
+                    Windows.Phone.System.UserProfile.LockScreen.SetImageUri(uri);
+
+                    // Get the URI of the lock screen background image.
+                    var currentImage = Windows.Phone.System.UserProfile.LockScreen.GetImageUri();
+                    MessageBox.Show("The new Wallpaper is set!");
+                }
+                else
+                {
+                    MessageBox.Show("You said no, so I can't update your background.");
+                }
+            }
+            catch (System.Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.ToString());
+            }
+        }
+
+        private void Change_Wallpaper(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            BitmapImage bitmap_image = (BitmapImage)(sender as Image).Source;
+            string file_name = bitmap_image.UriSource.ToString();
+            LockHelper(file_name, true);
         }
     }
 }
